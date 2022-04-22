@@ -2,7 +2,7 @@
 
 ## Usage
     module "vpc" {
-       source = "/Users/sibi/Devops/repositories/  terraform-aws-vpc"
+       source = "sibisaravanan/terraform-aws-vpc"
      
        vpc_name              = "my_vpc"  
        cidr_block           = "10.0.0.0/16"  
