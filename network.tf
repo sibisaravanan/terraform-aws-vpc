@@ -39,12 +39,7 @@ resource "aws_subnet" "public_subnets" {
 
 
 
-resource "aws_internet_gateway" "internet_gateway" {
-  vpc_id = aws_vpc.vpc.id
-  tags = {
-    Name = "${var.vpc_name}-igw"
-  }
-}
+
 
 resource "aws_eip" "nat_gateway_eip" {
   vpc        = true
