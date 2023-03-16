@@ -1,18 +1,18 @@
 variable "aws_region" {
-  type    = string
-  default = "us-east-1"
+  type        = string
+  default     = "us-east-1"
   description = "AWS Region"
 }
 
 variable "vpc_name" {
-  type    = string
-  default = "my_vpc"
+  type        = string
+  default     = "my_vpc"
   description = "Desired name for the VPC"
 }
 
 variable "cidr_block" {
-  type    = string
-  default = "10.0.0.0/16"
+  type        = string
+  default     = "10.0.0.0/16"
   description = "CIDR Range"
 }
 
@@ -36,20 +36,20 @@ variable "public_subnets" {
 }
 
 variable "instance_tenancy" {
-  type = string
-  default = "default"
+  type        = string
+  default     = "default"
   description = "Instance Tenancy"
 }
 
 variable "enable_dns_hostnames" {
-  type = bool
-  default = true
+  type        = bool
+  default     = true
   description = "Enable DNS Hostnames"
 }
 
 variable "enable_dns_support" {
-  type = bool
-  default = true
+  type        = bool
+  default     = true
   description = "Enable DNS Support"
 }
 
